@@ -13,13 +13,13 @@
 </head>
 <body>
 
-    <header >
-        
+    <header>
+       
         <nav class="container flex">
             <a href="logo-web" class="logo-web link">Web<span class="studio">Studio</span></a>
             
             <ul class="menu-nav list">
-            <li class="menu list"><a href="./index.html" class="menu link">Studio</a></li>
+            <li class="menu list"><a href="./index.html" class="current menu link">Studio</a></li>
             <li class="menu list"><a href="./portfolio.html" class="menu link">Portfolio</a></li>
             <li class="menu list"><a href="#" class="menu link">Contacts</a></li>
             </ul>
@@ -29,16 +29,33 @@
                 <li class="contact list"><a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="contact list"><a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
+           
         </nav>
-       
+      
     </header>
-<main>
 
-    <section class="hero">
+<main>
+ 
         <div class="container">
+           
+            <section class="hero">
+            
         <h1 >Effective Solutions for Your Business</h1>
-        <button class="button-studio" type="button">Order Service</button>
+        <button class="button-studio" type="button" data-modal-open>Order Service</button>
+
+</div>
+
+<div class="backdrop  is-hidden" data-modal>
+    <div class="backdrop-modal ">
+        <button type="button" class="button-modal" >
+            <svg with="24" height="24">
+                <use  data-modal-close href="./images/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
     </div>
+</div> 
+
+
     </section>
 
 <section class="section1"> 
@@ -344,6 +361,8 @@
 </div>
 
 </footer>
+
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
