@@ -631,7 +631,7 @@ text-align: center;
 letter-spacing: 0.04em;
 color: var(--button-background) ;
 cursor: pointer;
-
+transition: color, background  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -647,9 +647,7 @@ color: var(--brend-background);
 
 .menu-portfolio {
 margin-right: 24px;
-transition-property: background, color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-portfolio:nth-child(5n) {
@@ -661,9 +659,8 @@ margin-right: 0;
 border: 0.5px solid  var(--section-background);
 border-top: none;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-transition-property: box-shadow;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .border-portfolio:hover {
@@ -686,7 +683,12 @@ justify-content: center;
 .style4 {
 flex-wrap: wrap;
 }
-
+ 
+.text-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
 
 .work {
 margin-bottom: 48px;
